@@ -1,0 +1,25 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Addons::name::departments"
+msgid "Simtech development: departments"
+msgstr "Simtech development: departments"
+
+msgctxt "Addons::description::departments"
+msgid "Allows you to create departments"
+msgstr "Allows you to create departments"
+
+msgctxt "Languages::departments"
+msgid "Departments"
+msgstr "Departments"
+
+msgctxt "Languages::head_of_department"
+msgid "Head of department"
+msgstr "Head of department"
+
+msgctxt "Languages::employee_department"
+msgid "Employee department"
+msgstr "Employee department"
