@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>departments</id>
+    <version>4.13.2.0</version>
+    <priority>1200</priority>
+    <position>10</position>
+    <status>active</status>
+    <default_language>ru</default_language>
+    <queries>
+        <item for="install">
+            CREATE TABLE `?:departments` (
+                `department_id` int(11) unsigned NOT NULL auto_increment,
+                `position` int(11) NOT NULL default '0',
+                `status` varchar(1) NOT NULL default 'A',
+                `timestamp` int(11) unsigned NOT NULL default '0',
+                `upd_timestamp` int(11) unsigned NOT NULL default '0',
+                `user_id` int(11) unsigned NOT NULL default '0',
+                KEY (`user_id`),
+                PRIMARY KEY (`department_id`)
+            ) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+        </item>
+        <item for="install">
+            CREATE TABLE `?:department_descriptions` (
+                `department_id` int(11) unsigned NOT NULL default 0,
+                `lang_code` char(2) NOT NULL default '',
+                `department` varchar(255) NOT NULL default '',
+                `description` text NULL,
+                PRIMARY KEY  (`department`,`lang_code`)
+            ) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+        </item>
+        <item for="install">
+            CREATE TABLE `?:department_links` (
+            `department_id` int(11) unsigned NOT NULL default 0,
+            `staff_id` int(11) unsigned NOT NULL default '0',
+            KEY (`staff_id`),
+            KEY (`department_id`),
+            PRIMARY KEY (`department_id`, `staff_id`)
+            ) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+        </item>
+        <item for="uninstall" editions="MULTIVENDOR,ULTIMATE">DROP TABLE IF EXISTS `?:departments`</item>
+        <item for="uninstall" editions="MULTIVENDOR,ULTIMATE">DROP TABLE IF EXISTS `?:department_descriptions`</item>
+        <item for="uninstall" editions="MULTIVENDOR,ULTIMATE">DROP TABLE IF EXISTS `?:department_links`</item>
+    </queries>
+</addon>
