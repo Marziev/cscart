@@ -23,3 +23,7 @@ msgstr "Head of department"
 msgctxt "Languages::employee_department"
 msgid "Employee department"
 msgstr "Employee department"
+
+msgctxt "Languages::add_department"
+msgid "Add department"
+msgstr "Add department"
