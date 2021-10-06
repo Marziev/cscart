@@ -21,10 +21,10 @@ function fn_get_department_data($department_id = 0, $lang_code = CART_LANGUAGE) 
 
 function fn_get_departments ($params = [], $items_per_page = 0, $lang_code = CART_LANGUAGE) {
 
-    $default_params = array(
+    $default_params = [
         'page' => 1,
         'items_per_page' => $items_per_page
-    );
+    ];
 
     $params = array_merge($default_params, $params);
 
@@ -32,12 +32,12 @@ function fn_get_departments ($params = [], $items_per_page = 0, $lang_code = CAR
         $params['status'] = 'A';
     }
 
-    $sortings = array(
+    $sortings = [
         'position' => '?:departments.position',
         'timestamp' => '?:departments.timestamp',
         'name' => '?:department_descriptions.department',
         'status' => '?:departments.status',
-    );
+    ];
 
     $condition = $limit = $join = '';
 
