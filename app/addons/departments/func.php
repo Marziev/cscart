@@ -3,6 +3,8 @@
 use Tygh\Registry;
 use Tygh\Languages\Languages;
 
+if (!defined('BOOTSTRAP')) { die('Access denied'); }
+
 function fn_get_department_data($department_id = 0, $lang_code = CART_LANGUAGE) {
     $department = [];
     if(!empty($department_id)) {

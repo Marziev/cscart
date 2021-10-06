@@ -43,7 +43,6 @@ if ($mode == 'add_department' || $mode == 'update_department') {
 }
 
 if ($mode == 'manage_departments') {
-    // fn_print_die('test');
     list($departments, $search) = fn_get_departments($_REQUEST, Registry::get('settings.Appearance.admin_elements_per_page'), DESCR_SL);
      Tygh::$app['view']->assign('departments', $departments);
      Tygh::$app['view']->assign('search', $search);
