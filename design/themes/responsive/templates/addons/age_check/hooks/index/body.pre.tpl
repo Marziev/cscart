@@ -17,7 +17,7 @@
                 </ol>
                 <div class="buttons-container agecheck-buttons">
                     <div class="">
-                        {include file="buttons/button.tpl" but_name="dispatch[test.test]" but_text=__("submit") but_role="submit" but_meta="ty-btn__primary ty-btn__big cm-form-dialog-closer ty-btn"}
+                        {include file="buttons/button.tpl" but_name="dispatch[age_check.check]" but_text=__("submit") but_role="submit" but_meta="ty-btn__primary ty-btn__big cm-form-dialog-closer ty-btn"}
                     </div>
                 </div>
             </form>

@@ -16,7 +16,7 @@ use Tygh\Registry;
 if (!defined('BOOTSTRAP')) { die('Access denied'); }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') { 
-    if ($mode == 'test') {
+    if ($mode == 'check') {
         $d = $_REQUEST['day'];
         $m = $_REQUEST['month'];
         $y = $_REQUEST['year'];

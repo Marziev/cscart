@@ -1,1 +1,1 @@
-{style src="addons/test/styles.less"}
+{style src="addons/age_check/styles.less"}
