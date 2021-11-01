@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>age_check</id>
+    <version>4.13.2.0</version>
+    <priority>3500</priority>
+    <position>0</position>
+    <status>active</status>
+    <default_language>en</default_language>
+</addon>
