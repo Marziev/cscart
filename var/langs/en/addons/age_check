@@ -1,0 +1,13 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Addons::name::age_check"
+msgid "Age check"
+msgstr "Age check"
+
+msgctxt "Addons::description::age_check"
+msgid "Toggles age restriction rules for products and categories"
+msgstr "Toggles age restriction rules for products and categories"
